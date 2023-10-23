@@ -1,10 +1,14 @@
 #! /usr/bin/env python3
 """
-    LINKEDIN_ANALYSE_POST permet d'analyser un post Linkedin.
-
-    Nécessite de :
-    1. chercher 'CreatedTime' dans l'inspecteur de la page Linkedin sur laquelle se trouve
-    2. copier-coller la partie dictionnaire dans le fichier texte linkedin.txt
+    LINKEDIN_ANALYSE_POST permet d'analyser un post Linkedin et ses commentaires
+    - récupérer l'heure UTC de publication :
+            d'un post Linkedin,
+            de sa mise à jour,
+            du re-post
+            et de tous les commentaires
+    - l'URL en clair de la vidéo
+    - les profils des membres qui ont interagi
+    - l'URL avec la meilleure définition des images et logos
 """
 
 import datetime
@@ -298,4 +302,4 @@ def recup_data(fichier_txt = '', fichier_json = ''):
     create_json(dict_linkedin_filtre, dossier, fichier_json)
 
 #=== LANCEMENT ====
-recup_data(fichier_txt = linkedin_data_file)
+recup_data(fichier_txt = linkedin_data_file, fichier_json = linkedin_json_file)
