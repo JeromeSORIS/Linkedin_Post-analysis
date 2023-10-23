@@ -3,7 +3,7 @@
 * Réalisé dans un but pédagogique.
 
 ### Objectifs
-Code Python permettant :
+Code en Python permettant :
 * de récupérer l'heure UTC de publication :
   * d'un post Linkedin,
   * de sa mise à jour,
