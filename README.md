@@ -4,7 +4,7 @@
 
 ### Objectifs
 Code en Python permettant :
-* de récupérer l'heure UTC de publication :
+* de récupérer la date et l'heure UTC de publication :
   * d'un post Linkedin,
   * de sa mise à jour,
   * du re-post
