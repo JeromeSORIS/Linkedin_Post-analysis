@@ -196,7 +196,7 @@ def recup_data(fichier_txt = '', fichier_json = ''):
         elif 'SocialActivityCounts' in included['$type'] : 
             temp_comment = {'post_id':'', 'comment_id':''}
             if 'comment:' in included['entityUrn']:
-                temp = included['entityUrn'].split('ugcPost:')[1].split(',')
+                temp = included['entityUrn'].split('ugcPost:')[-1].split(',')
                 temp_comment['post_id'] = temp[0]
                 temp_comment['comment_id'] = temp[1].replace(')','')
             elif 'Post:' in included['entityUrn']:
